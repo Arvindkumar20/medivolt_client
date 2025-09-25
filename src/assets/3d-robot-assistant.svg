@@ -1,0 +1,140 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3D Robot Assistant Model -->
+  
+  <!-- Base Platform -->
+  <g class="base-platform">
+    <path d="M80 220L150 260L220 220L150 180L80 220Z" fill="#34495E" stroke="#2C3E50" stroke-width="2"/>
+    <path d="M80 220L80 230L150 270L150 260L80 220Z" fill="#2C3E50" stroke="#1A2530" stroke-width="2"/>
+    <path d="M150 260L150 270L220 230L220 220L150 260Z" fill="#2C3E50" stroke="#1A2530" stroke-width="2"/>
+  </g>
+  
+  <!-- Robot Body -->
+  <g class="robot-body">
+    <!-- Main Body -->
+    <path d="M120 180L180 210L180 150L120 120L120 180Z" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    <path d="M120 180L120 190L180 220L180 210L120 180Z" fill="#7F8C8D" stroke="#6C7A7A" stroke-width="2"/>
+    <path d="M180 210L180 220L210 205L210 195L180 210Z" fill="#7F8C8D" stroke="#6C7A7A" stroke-width="2"/>
+    <path d="M180 150L210 135L210 195L180 210L180 150Z" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    
+    <!-- Body Details -->
+    <rect x="135" y="140" width="30" height="40" rx="2" fill="#3498DB" fill-opacity="0.8" stroke="#2980B9" stroke-width="1" class="control-panel"/>
+    
+    <!-- Control Lights -->
+    <circle cx="140" cy="150" r="3" fill="#E74C3C" class="control-light"/>
+    <circle cx="150" cy="150" r="3" fill="#F1C40F" class="control-light"/>
+    <circle cx="160" cy="150" r="3" fill="#2ECC71" class="control-light"/>
+    
+    <!-- Control Buttons -->
+    <rect x="140" y="160" width="20" height="5" rx="1" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1" class="control-button"/>
+    <rect x="140" y="170" width="20" height="5" rx="1" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1" class="control-button"/>
+  </g>
+  
+  <!-- Robot Head -->
+  <g class="robot-head">
+    <!-- Head Base -->
+    <path d="M130 100L170 120L170 80L130 60L130 100Z" fill="#BDC3C7" stroke="#95A5A6" stroke-width="2"/>
+    <path d="M130 100L130 110L170 130L170 120L130 100Z" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    <path d="M170 120L170 130L190 120L190 110L170 120Z" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    <path d="M170 80L190 70L190 110L170 120L170 80Z" fill="#BDC3C7" stroke="#95A5A6" stroke-width="2"/>
+    <path d="M130 60L170 80L190 70L150 50L130 60Z" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="2"/>
+    
+    <!-- Face Screen -->
+    <path d="M140 70L160 80L160 95L140 85L140 70Z" fill="#2C3E50" stroke="#34495E" stroke-width="1.5" class="face-screen"/>
+    
+    <!-- Eyes -->
+    <circle cx="145" cy="78" r="3" fill="#3498DB" class="robot-eye"/>
+    <circle cx="155" cy="83" r="3" fill="#3498DB" class="robot-eye"/>
+    
+    <!-- Mouth -->
+    <path d="M143 85L157 90" stroke="#3498DB" stroke-width="1.5" class="robot-mouth"/>
+    
+    <!-- Antennas -->
+    <line x1="140" y1="60" x2="135" y2="50" stroke="#95A5A6" stroke-width="2" class="antenna"/>
+    <circle cx="135" cy="50" r="2" fill="#E74C3C" class="antenna-light"/>
+    
+    <line x1="160" y1="65" x2="165" y2="55" stroke="#95A5A6" stroke-width="2" class="antenna"/>
+    <circle cx="165" cy="55" r="2" fill="#E74C3C" class="antenna-light"/>
+  </g>
+  
+  <!-- Robot Arms -->
+  <g class="robot-arms">
+    <!-- Left Arm -->
+    <path d="M120 160L100 170L100 140L120 130" stroke="#95A5A6" stroke-width="4" stroke-linecap="round" class="arm"/>
+    <path d="M100 170L85 165" stroke="#95A5A6" stroke-width="4" stroke-linecap="round" class="forearm"/>
+    <circle cx="85" cy="165" r="5" fill="#BDC3C7" stroke="#95A5A6" stroke-width="1" class="hand"/>
+    
+    <!-- Right Arm -->
+    <path d="M180 180L200 190L200 160L180 150" stroke="#95A5A6" stroke-width="4" stroke-linecap="round" class="arm"/>
+    <path d="M200 190L215 185" stroke="#95A5A6" stroke-width="4" stroke-linecap="round" class="forearm"/>
+    <circle cx="215" cy="185" r="5" fill="#BDC3C7" stroke="#95A5A6" stroke-width="1" class="hand"/>
+  </g>
+  
+  <!-- Robot Legs -->
+  <g class="robot-legs">
+    <!-- Left Leg -->
+    <path d="M135 210L125 230" stroke="#95A5A6" stroke-width="6" stroke-linecap="round" class="leg"/>
+    <path d="M125 230L120 250" stroke="#95A5A6" stroke-width="6" stroke-linecap="round" class="lower-leg"/>
+    <rect x="115" y="250" width="15" height="5" rx="2" fill="#7F8C8D" stroke="#6C7A7A" stroke-width="1" class="foot"/>
+    
+    <!-- Right Leg -->
+    <path d="M165 225L175 245" stroke="#95A5A6" stroke-width="6" stroke-linecap="round" class="leg"/>
+    <path d="M175 245L180 265" stroke="#95A5A6" stroke-width="6" stroke-linecap="round" class="lower-leg"/>
+    <rect x="170" y="265" width="15" height="5" rx="2" fill="#7F8C8D" stroke="#6C7A7A" stroke-width="1" class="foot"/>
+  </g>
+  
+  <!-- Holographic Projection -->
+  <g class="holographic-projection">
+    <!-- Projection Base -->
+    <ellipse cx="85" cy="165" rx="10" ry="5" fill="#3498DB" fill-opacity="0.3" stroke="#3498DB" stroke-width="1"/>
+    
+    <!-- Projection Beam -->
+    <path d="M85 160L85 130" stroke="#3498DB" stroke-width="1" stroke-dasharray="2 2" class="projection-beam"/>
+    
+    <!-- Projected Content -->
+    <g class="projected-content" transform="translate(70, 100) scale(0.3)">
+      <rect x="0" y="0" width="100" height="100" rx="10" fill="#3498DB" fill-opacity="0.2" stroke="#3498DB" stroke-width="2"/>
+      
+      <line x1="20" y1="20" x2="80" y2="20" stroke="#3498DB" stroke-width="2"/>
+      <line x1="20" y1="40" x2="80" y2="40" stroke="#3498DB" stroke-width="2"/>
+      <line x1="20" y1="60" x2="80" y2="60" stroke="#3498DB" stroke-width="2"/>
+      <line x1="20" y1="80" x2="60" y2="80" stroke="#3498DB" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Data Flow Particles -->
+  <g class="data-particles">
+    <circle cx="150" cy="100" r="2" fill="#3498DB" class="data-particle particle1"/>
+    <circle cx="160" cy="120" r="2" fill="#3498DB" class="data-particle particle2"/>
+    <circle cx="140" cy="140" r="2" fill="#3498DB" class="data-particle particle3"/>
+    <circle cx="170" cy="160" r="2" fill="#3498DB" class="data-particle particle4"/>
+    <circle cx="130" cy="180" r="2" fill="#3498DB" class="data-particle particle5"/>
+  </g>
+  
+  <!-- Energy Field -->
+  <g class="energy-field" opacity="0.5">
+    <circle cx="150" cy="150" r="80" fill="url(#energy-gradient)" class="energy-glow"/>
+  </g>
+  
+  <!-- Gear Elements -->
+  <g class="gears">
+    <path d="M110 110C110 110 105 105 110 100C115 95 120 100 120 100" stroke="#7F8C8D" stroke-width="1.5" class="gear"/>
+    <path d="M190 90C190 90 195 85 200 90C205 95 200 100 200 100" stroke="#7F8C8D" stroke-width="1.5" class="gear"/>
+    <path d="M200 170C200 170 205 175 200 180C195 185 190 180 190 180" stroke="#7F8C8D" stroke-width="1.5" class="gear"/>
+  </g>
+  
+  <!-- Circuit Lines -->
+  <g class="circuit-lines">
+    <path d="M140 120L160 130" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="circuit-line"/>
+    <path d="M130 140L150 150" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="circuit-line"/>
+    <path d="M160 160L180 170" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="circuit-line"/>
+    <path d="M140 180L160 190" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="circuit-line"/>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="energy-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#3498DB" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3498DB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -1,0 +1,94 @@
+/* Footer Animations CSS */
+
+.plant-animation {
+  transition: transform 2s ease-in-out;
+  animation: sway 4s ease-in-out infinite alternate;
+}
+
+.plant-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  transform-origin: bottom left;
+}
+
+.plant-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  transform-origin: bottom right;
+}
+
+.character-animation {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  z-index: 1;
+  animation: float 5s ease-in-out infinite;
+}
+
+.people-talking-animation {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  z-index: 1;
+  animation: bounce 6s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .plant-left, .plant-right {
+    width: 100px;
+    height: auto;
+  }
+  
+  .character-animation {
+    right: 5%;
+    width: 120px;
+    height: auto;
+  }
+  
+  .people-talking-animation {
+    left: 5%;
+    width: 120px;
+    height: auto;
+  }
+}

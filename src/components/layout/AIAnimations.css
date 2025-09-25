@@ -1,0 +1,338 @@
+/* AI Animations CSS */
+
+/* Neural Network Animation */
+.neural-network-animation {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  z-index: 1;
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+
+/* Neural Network Nodes Animation */
+.node {
+  animation: pulse 3s infinite;
+}
+
+.input-node {
+  animation-delay: 0s;
+}
+
+.hidden-node {
+  animation-delay: 0.5s;
+}
+
+.output-node {
+  animation-delay: 1s;
+}
+
+/* Neural Network Connections Animation */
+.connection {
+  animation: fadeInOut 4s infinite;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 20;
+}
+
+/* Pulse Animation */
+.pulse {
+  animation: movePulse 8s infinite;
+  opacity: 0;
+}
+
+.pulse1 {
+  animation-delay: 0s;
+}
+
+.pulse2 {
+  animation-delay: 2s;
+}
+
+.pulse3 {
+  animation-delay: 4s;
+}
+
+/* Data Visualization Animation */
+.data-visualization-animation {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  z-index: 1;
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+
+.data-point {
+  animation: growShrink 3s infinite alternate;
+}
+
+.chart-line {
+  animation: drawLine 3s forwards;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.chart-area {
+  animation: fadeIn 3s forwards;
+  opacity: 0;
+}
+
+.trend-line {
+  animation: drawLine 2s 1s forwards;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.prediction {
+  animation: drawLine 1s 2s forwards;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+
+.prediction-point {
+  animation: fadeInPop 1s 2.5s forwards;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.annotation {
+  animation: pulse 2s infinite;
+  animation-delay: 3s;
+}
+
+/* Medical AI Animation */
+.medical-ai-animation {
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+  z-index: 1;
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+
+.robot-eye {
+  animation: blink 4s infinite;
+}
+
+.robot-pupil {
+  animation: look 8s infinite;
+}
+
+.robot-speech {
+  animation: speak 2s infinite;
+}
+
+.robot-antenna-tip {
+  animation: glow 2s infinite;
+}
+
+.brain-wave {
+  animation: wave 3s infinite;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 200;
+}
+
+.data-circle {
+  animation: pulse 4s infinite alternate;
+}
+
+.pulse-line {
+  animation: drawLine 2s infinite;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+}
+
+.medical-cross-v, .medical-cross-h {
+  animation: fadeInOut 3s infinite alternate;
+}
+
+/* Keyframes */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes movePulse {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(50px, 50px);
+  }
+}
+
+@keyframes growShrink {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInPop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0%, 45%, 55%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes look {
+  0%, 20%, 80%, 100% {
+    transform: translate(0, 0);
+  }
+  30%, 70% {
+    transform: translate(3px, 0);
+  }
+  50% {
+    transform: translate(-3px, 0);
+  }
+}
+
+@keyframes speak {
+  0%, 100% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 10;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px #EC4899);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px #EC4899);
+  }
+}
+
+@keyframes wave {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .neural-network-animation,
+  .data-visualization-animation,
+  .medical-ai-animation {
+    transform: scale(0.6);
+  }
+  
+  .neural-network-animation {
+    right: 5%;
+  }
+  
+  .data-visualization-animation {
+    left: 5%;
+  }
+  
+  .medical-ai-animation {
+    right: 5%;
+  }
+}
+
+/* Particle Animation */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #3B82F6;
+  border-radius: 50%;
+  animation: float-particle 15s infinite linear;
+}
+
+.particle:nth-child(2n) {
+  background: #8B5CF6;
+  width: 8px;
+  height: 8px;
+  animation-duration: 20s;
+}
+
+.particle:nth-child(3n) {
+  background: #10B981;
+  width: 4px;
+  height: 4px;
+  animation-duration: 25s;
+}
+
+.particle:nth-child(4n) {
+  background: #EC4899;
+  width: 5px;
+  height: 5px;
+  animation-duration: 30s;
+}
+
+@keyframes float-particle {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100vw);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,47 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Grid -->
+  <path d="M20,20 L20,180 L180,180" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Grid Lines -->
+  <line x1="20" y1="60" x2="180" y2="60" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="20" y1="100" x2="180" y2="100" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="20" y1="140" x2="180" y2="140" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4" />
+  
+  <line x1="60" y1="20" x2="60" y2="180" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="100" y1="20" x2="100" y2="180" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="140" y1="20" x2="140" y2="180" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4" />
+  
+  <!-- Data Points -->
+  <circle cx="40" cy="150" r="5" fill="#3B82F6" class="data-point" />
+  <circle cx="60" cy="120" r="5" fill="#3B82F6" class="data-point" />
+  <circle cx="80" cy="140" r="5" fill="#3B82F6" class="data-point" />
+  <circle cx="100" cy="90" r="5" fill="#3B82F6" class="data-point" />
+  <circle cx="120" cy="70" r="5" fill="#3B82F6" class="data-point" />
+  <circle cx="140" cy="50" r="5" fill="#3B82F6" class="data-point" />
+  <circle cx="160" cy="60" r="5" fill="#3B82F6" class="data-point" />
+  
+  <!-- Line Chart -->
+  <path d="M40,150 L60,120 L80,140 L100,90 L120,70 L140,50 L160,60" stroke="#3B82F6" stroke-width="2" fill="none" class="chart-line" />
+  
+  <!-- Area Under Chart -->
+  <path d="M40,150 L60,120 L80,140 L100,90 L120,70 L140,50 L160,60 L160,180 L40,180 Z" fill="url(#gradient)" opacity="0.3" class="chart-area" />
+  
+  <!-- Trend Line -->
+  <path d="M40,130 L160,70" stroke="#EC4899" stroke-width="2" stroke-dasharray="6 4" class="trend-line" />
+  
+  <!-- Prediction Zone -->
+  <path d="M160,60 Q170,50 180,55" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="3 3" class="prediction" />
+  <circle cx="180" cy="55" r="5" fill="#8B5CF6" class="prediction-point" />
+  
+  <!-- Annotations -->
+  <circle cx="100" cy="90" r="8" stroke="#10B981" stroke-width="2" fill="none" class="annotation" />
+  <circle cx="140" cy="50" r="8" stroke="#F59E0B" stroke-width="2" fill="none" class="annotation" />
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+</svg>

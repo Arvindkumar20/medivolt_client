@@ -1,0 +1,27 @@
+<svg width="200" height="250" viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Head -->
+  <ellipse cx="100" cy="70" rx="35" ry="40" fill="#F8BEAB" />
+  
+  <!-- Hair -->
+  <path d="M70,70 C65,40 80,20 100,20 C120,20 135,40 130,70 C125,90 75,90 70,70 Z" fill="#6B4226" />
+  
+  <!-- Face -->
+  <circle cx="85" cy="60" r="5" fill="#3E2723" /> <!-- Left eye -->
+  <circle cx="115" cy="60" r="5" fill="#3E2723" /> <!-- Right eye -->
+  <path d="M90,75 C95,80 105,80 110,75" stroke="#3E2723" stroke-width="2" fill="none" /> <!-- Smile -->
+  
+  <!-- Body -->
+  <path d="M70,110 C70,90 130,90 130,110 L130,180 C130,200 70,200 70,180 Z" fill="#FF7043" /> <!-- Jacket -->
+  <rect x="85" y="110" width="30" height="70" fill="#9E9E9E" /> <!-- Shirt -->
+  
+  <!-- Arms -->
+  <path d="M70,110 C50,120 40,150 50,170" stroke="#FF7043" stroke-width="20" fill="none" /> <!-- Left arm -->
+  <path d="M130,110 C150,120 160,150 150,170" stroke="#FF7043" stroke-width="20" fill="none" /> <!-- Right arm -->
+  
+  <!-- Hand with device -->
+  <rect x="140" y="160" width="30" height="20" rx="5" fill="#424242" /> <!-- Device -->
+  <circle cx="150" cy="170" r="3" fill="white" /> <!-- Button -->
+  
+  <!-- Accessories -->
+  <path d="M85,140 C85,135 115,135 115,140" stroke="#FFC107" stroke-width="3" fill="none" /> <!-- Necklace -->
+</svg>

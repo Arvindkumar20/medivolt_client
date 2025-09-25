@@ -1,0 +1,136 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3D Medical Data Visualization Model -->
+  
+  <!-- Base Platform -->
+  <g class="base-platform">
+    <path d="M60 200L150 250L240 200L150 150L60 200Z" fill="#2C3E50" stroke="#34495E" stroke-width="2"/>
+    <path d="M60 200L60 210L150 260L150 250L60 200Z" fill="#1A2530" stroke="#2C3E50" stroke-width="2"/>
+    <path d="M150 250L150 260L240 210L240 200L150 250Z" fill="#1A2530" stroke="#2C3E50" stroke-width="2"/>
+  </g>
+  
+  <!-- Medical Data Hologram -->
+  <g class="medical-hologram">
+    <!-- Hologram Base -->
+    <ellipse cx="150" cy="150" rx="50" ry="20" fill="#3498DB" fill-opacity="0.3" stroke="#3498DB" stroke-width="1"/>
+    
+    <!-- Hologram Beam -->
+    <path d="M150 130L150 70" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="hologram-beam"/>
+    
+    <!-- Heart Hologram -->
+    <g class="heart-hologram" transform="translate(130, 40) scale(0.8)">
+      <!-- Heart Shape -->
+      <path d="M25 10C25 10 15 10 15 20C15 30 25 40 25 40C25 40 35 30 35 20C35 10 25 10 25 10Z" fill="#E74C3C" fill-opacity="0.5" stroke="#E74C3C" stroke-width="1.5"/>
+      
+      <!-- Heartbeat Line -->
+      <path d="M5 30H15L20 20L25 40L30 25L35 30H45" stroke="#E74C3C" stroke-width="1.5" class="heartbeat-line"/>
+    </g>
+    
+    <!-- DNA Strand -->
+    <g class="dna-strand" transform="translate(170, 40) scale(0.7)">
+      <path d="M20 10C30 15 40 15 50 10" stroke="#9B59B6" stroke-width="1.5" class="dna-line"/>
+      <path d="M20 20C30 25 40 25 50 20" stroke="#9B59B6" stroke-width="1.5" class="dna-line"/>
+      <path d="M20 30C30 35 40 35 50 30" stroke="#9B59B6" stroke-width="1.5" class="dna-line"/>
+      <path d="M20 40C30 45 40 45 50 40" stroke="#9B59B6" stroke-width="1.5" class="dna-line"/>
+      
+      <path d="M20 10L20 40" stroke="#9B59B6" stroke-width="1" class="dna-connector"/>
+      <path d="M30 15L30 45" stroke="#9B59B6" stroke-width="1" class="dna-connector"/>
+      <path d="M40 15L40 45" stroke="#9B59B6" stroke-width="1" class="dna-connector"/>
+      <path d="M50 10L50 40" stroke="#9B59B6" stroke-width="1" class="dna-connector"/>
+    </g>
+  </g>
+  
+  <!-- 3D Medical Charts -->
+  <g class="medical-charts">
+    <!-- Bar Chart -->
+    <g class="bar-chart" transform="translate(90, 120) scale(0.8)">
+      <path d="M0 0L0 60L80 60" stroke="#3498DB" stroke-width="1" class="chart-axis"/>
+      
+      <path d="M10 60L10 40L20 40L20 60Z" fill="#3498DB" fill-opacity="0.7" stroke="#3498DB" stroke-width="1" class="chart-bar"/>
+      <path d="M25 60L25 30L35 30L35 60Z" fill="#3498DB" fill-opacity="0.7" stroke="#3498DB" stroke-width="1" class="chart-bar"/>
+      <path d="M40 60L40 20L50 20L50 60Z" fill="#3498DB" fill-opacity="0.7" stroke="#3498DB" stroke-width="1" class="chart-bar"/>
+      <path d="M55 60L55 10L65 10L65 60Z" fill="#3498DB" fill-opacity="0.7" stroke="#3498DB" stroke-width="1" class="chart-bar"/>
+    </g>
+    
+    <!-- Pie Chart -->
+    <g class="pie-chart" transform="translate(190, 120) scale(0.7)">
+      <circle cx="30" cy="30" r="30" fill="#2ECC71" fill-opacity="0.7" stroke="#2ECC71" stroke-width="1"/>
+      <path d="M30 30L30 0A30 30 0 0 1 60 30Z" fill="#F1C40F" fill-opacity="0.7" stroke="#F1C40F" stroke-width="1"/>
+      <path d="M30 30L60 30A30 30 0 0 1 45 56Z" fill="#E74C3C" fill-opacity="0.7" stroke="#E74C3C" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Medical Devices -->
+  <g class="medical-devices">
+    <!-- Tablet Device -->
+    <g class="tablet-device" transform="translate(70, 160) scale(0.7)">
+      <rect x="0" y="0" width="50" height="70" rx="5" fill="#7F8C8D" stroke="#95A5A6" stroke-width="1.5"/>
+      <rect x="5" y="5" width="40" height="50" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1"/>
+      
+      <!-- Screen Content -->
+      <line x1="10" y1="15" x2="40" y2="15" stroke="#3498DB" stroke-width="1"/>
+      <line x1="10" y1="25" x2="35" y2="25" stroke="#3498DB" stroke-width="1"/>
+      <line x1="10" y1="35" x2="40" y2="35" stroke="#3498DB" stroke-width="1"/>
+      <line x1="10" y1="45" x2="30" y2="45" stroke="#3498DB" stroke-width="1"/>
+      
+      <!-- Button -->
+      <circle cx="25" cy="65" r="3" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1"/>
+    </g>
+    
+    <!-- Medical Monitor -->
+    <g class="medical-monitor" transform="translate(180, 160) scale(0.7)">
+      <rect x="0" y="0" width="60" height="40" rx="3" fill="#2C3E50" stroke="#34495E" stroke-width="1.5"/>
+      <rect x="5" y="5" width="50" height="30" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1"/>
+      
+      <!-- Monitor Stand -->
+      <path d="M25 40L25 50L35 50L35 40" fill="#2C3E50" stroke="#34495E" stroke-width="1.5"/>
+      <rect x="20" y="50" width="20" height="5" rx="1" fill="#2C3E50" stroke="#34495E" stroke-width="1.5"/>
+      
+      <!-- Screen Content -->
+      <path d="M10 20H50" stroke="#E74C3C" stroke-width="1"/>
+      <path d="M10 20L15 15L20 25L25 10L30 20L35 15L40 25L45 10L50 20" stroke="#E74C3C" stroke-width="1" class="monitor-line"/>
+    </g>
+  </g>
+  
+  <!-- Data Flow Particles -->
+  <g class="data-particles">
+    <circle cx="100" cy="100" r="2" fill="#3498DB" class="data-particle particle1"/>
+    <circle cx="150" cy="120" r="2" fill="#3498DB" class="data-particle particle2"/>
+    <circle cx="200" cy="110" r="2" fill="#3498DB" class="data-particle particle3"/>
+    <circle cx="120" cy="150" r="2" fill="#3498DB" class="data-particle particle4"/>
+    <circle cx="180" cy="140" r="2" fill="#3498DB" class="data-particle particle5"/>
+    <circle cx="130" cy="90" r="2" fill="#3498DB" class="data-particle particle6"/>
+  </g>
+  
+  <!-- Connection Lines -->
+  <g class="connection-lines">
+    <path d="M100 120L150 100" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    <path d="M150 100L200 120" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    <path d="M100 150L150 130" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    <path d="M150 130L200 150" stroke="#3498DB" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+  </g>
+  
+  <!-- Medical Cross Symbol -->
+  <g class="medical-cross" transform="translate(140, 190) scale(0.5)">
+    <rect x="10" y="0" width="10" height="30" fill="#E74C3C" class="cross-vertical"/>
+    <rect x="0" y="10" width="30" height="10" fill="#E74C3C" class="cross-horizontal"/>
+  </g>
+  
+  <!-- Glow Effects -->
+  <g class="glow-effects" opacity="0.5">
+    <circle cx="150" cy="150" r="60" fill="url(#hologram-gradient)" class="hologram-glow"/>
+    <circle cx="150" cy="70" r="40" fill="url(#data-gradient)" class="data-glow"/>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="hologram-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#3498DB" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3498DB" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="data-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#E74C3C" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E74C3C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

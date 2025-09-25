@@ -1,0 +1,113 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3D AI Model with Isometric Perspective -->
+  
+  <!-- Base Platform -->
+  <g class="base-platform">
+    <path d="M60 180L150 230L240 180L150 130L60 180Z" fill="#2A3A5A" stroke="#4A5A7A" stroke-width="2"/>
+    <path d="M60 180L60 190L150 240L150 230L60 180Z" fill="#1A2A4A" stroke="#3A4A6A" stroke-width="2"/>
+    <path d="M150 230L150 240L240 190L240 180L150 230Z" fill="#1A2A4A" stroke="#3A4A6A" stroke-width="2"/>
+  </g>
+  
+  <!-- Core Processor -->
+  <g class="core-processor">
+    <path d="M130 160L170 180L170 120L130 100L130 160Z" fill="#3498DB" stroke="#2980B9" stroke-width="2"/>
+    <path d="M130 160L130 170L170 190L170 180L130 160Z" fill="#2980B9" stroke="#1F6AA8" stroke-width="2"/>
+    <path d="M170 180L170 190L210 170L210 160L170 180Z" fill="#2980B9" stroke="#1F6AA8" stroke-width="2"/>
+    <path d="M170 120L210 100L210 160L170 180L170 120Z" fill="#3498DB" stroke="#2980B9" stroke-width="2"/>
+    <path d="M130 100L170 120L210 100L170 80L130 100Z" fill="#4AA3DF" stroke="#3498DB" stroke-width="2"/>
+    
+    <!-- Processor Details -->
+    <circle cx="170" cy="130" r="15" fill="#1A5889" stroke="#4AA3DF" stroke-width="1.5" class="processor-core"/>
+    <circle cx="170" cy="130" r="8" fill="#4AA3DF" stroke="#7FC4F3" stroke-width="1" class="processor-inner"/>
+    <circle cx="170" cy="130" r="3" fill="#7FC4F3" class="processor-center"/>
+  </g>
+  
+  <!-- Holographic Display -->
+  <g class="holographic-display">
+    <!-- Hologram Base -->
+    <ellipse cx="170" cy="80" rx="15" ry="5" fill="#4AA3DF" fill-opacity="0.5" stroke="#7FC4F3" stroke-width="1"/>
+    
+    <!-- Hologram Projection -->
+    <path d="M170 75L170 40" stroke="#7FC4F3" stroke-width="1" stroke-dasharray="2 2" class="hologram-beam"/>
+    
+    <!-- Hologram Brain -->
+    <g class="hologram-brain">
+      <path d="M155 40C155 32.268 161.268 26 169 26C176.732 26 183 32.268 183 40C183 47.732 176.732 54 169 54C161.268 54 155 47.732 155 40Z" fill="#4AA3DF" fill-opacity="0.3" stroke="#7FC4F3" stroke-width="1"/>
+      <path d="M160 35C160 35 165 45 175 38" stroke="#7FC4F3" stroke-width="1" class="brain-detail"/>
+      <path d="M165 32C165 32 175 36 178 30" stroke="#7FC4F3" stroke-width="1" class="brain-detail"/>
+      <path d="M163 45C163 45 173 42 180 45" stroke="#7FC4F3" stroke-width="1" class="brain-detail"/>
+    </g>
+  </g>
+  
+  <!-- Connection Lines -->
+  <g class="connection-lines">
+    <!-- Vertical Lines -->
+    <line x1="140" y1="110" x2="140" y2="150" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    <line x1="160" y1="110" x2="160" y2="150" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    <line x1="180" y1="110" x2="180" y2="150" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    <line x1="200" y1="110" x2="200" y2="150" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    
+    <!-- Horizontal Lines -->
+    <line x1="140" y1="110" x2="200" y2="110" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    <line x1="140" y1="130" x2="200" y2="130" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+    <line x1="140" y1="150" x2="200" y2="150" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="3 2" class="connection-line"/>
+  </g>
+  
+  <!-- Data Flow Particles -->
+  <g class="data-particles">
+    <circle cx="150" cy="120" r="2" fill="#7FC4F3" class="data-particle particle1"/>
+    <circle cx="190" cy="140" r="2" fill="#7FC4F3" class="data-particle particle2"/>
+    <circle cx="170" cy="110" r="2" fill="#7FC4F3" class="data-particle particle3"/>
+    <circle cx="160" cy="150" r="2" fill="#7FC4F3" class="data-particle particle4"/>
+    <circle cx="180" cy="130" r="2" fill="#7FC4F3" class="data-particle particle5"/>
+  </g>
+  
+  <!-- Energy Rings -->
+  <g class="energy-rings">
+    <ellipse cx="170" cy="130" rx="25" ry="10" fill="none" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="3 2" class="energy-ring ring1"/>
+    <ellipse cx="170" cy="130" rx="35" ry="15" fill="none" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="4 3" class="energy-ring ring2"/>
+    <ellipse cx="170" cy="130" rx="45" ry="20" fill="none" stroke="#4AA3DF" stroke-width="1" stroke-dasharray="5 4" class="energy-ring ring3"/>
+  </g>
+  
+  <!-- Side Panels -->
+  <g class="side-panels">
+    <!-- Left Panel -->
+    <path d="M90 150L110 160L110 120L90 110L90 150Z" fill="#3498DB" fill-opacity="0.7" stroke="#2980B9" stroke-width="1.5"/>
+    <line x1="95" y1="115" x2="105" y2="120" stroke="#7FC4F3" stroke-width="1" class="panel-detail"/>
+    <line x1="95" y1="125" x2="105" y2="130" stroke="#7FC4F3" stroke-width="1" class="panel-detail"/>
+    <line x1="95" y1="135" x2="105" y2="140" stroke="#7FC4F3" stroke-width="1" class="panel-detail"/>
+    <line x1="95" y1="145" x2="105" y2="150" stroke="#7FC4F3" stroke-width="1" class="panel-detail"/>
+    
+    <!-- Right Panel -->
+    <path d="M230 150L250 140L250 100L230 110L230 150Z" fill="#3498DB" fill-opacity="0.7" stroke="#2980B9" stroke-width="1.5"/>
+    <line x1="235" y1="115" x2="245" y2="110" stroke="#7FC4F3" stroke-width="1" class="panel-detail"/>
+    <line x1="235" y1="125" x2="245" y2="120" stroke="#7FC4F3" stroke-width="1" class="panel-detail"/>
+    <line x1="235" y1="135" x2="245" y2="130" stroke="#7FC4F3" stroke-width="1" class="panel-detail"/>
+    <line x1="235" y1="145" x2="245" y2="140" stroke="#7FC4F3" stroke-width="1" class="panel-detail"/>
+  </g>
+  
+  <!-- Connection Tubes -->
+  <g class="connection-tubes">
+    <path d="M110 140L130 150" stroke="#4AA3DF" stroke-width="2" stroke-linecap="round" class="tube"/>
+    <path d="M210 140L230 130" stroke="#4AA3DF" stroke-width="2" stroke-linecap="round" class="tube"/>
+  </g>
+  
+  <!-- Glow Effects -->
+  <g class="glow-effects" opacity="0.7">
+    <circle cx="170" cy="130" r="30" fill="url(#glow-gradient)" class="core-glow"/>
+    <circle cx="170" cy="40" r="15" fill="url(#hologram-gradient)" class="hologram-glow"/>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="glow-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#7FC4F3" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7FC4F3" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="hologram-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#7FC4F3" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7FC4F3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

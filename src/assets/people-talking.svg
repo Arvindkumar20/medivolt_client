@@ -1,0 +1,25 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Person 1 (left) -->
+  <ellipse cx="60" cy="50" rx="25" ry="30" fill="#F5DEB3" /> <!-- Head -->
+  <path d="M40,50 C35,30 50,15 60,15 C70,15 85,30 80,50 C75,65 45,65 40,50 Z" fill="#8D6E63" /> <!-- Hair -->
+  <circle cx="50" cy="45" r="3" fill="#3E2723" /> <!-- Left eye -->
+  <circle cx="70" cy="45" r="3" fill="#3E2723" /> <!-- Right eye -->
+  <path d="M55,55 C58,58 62,58 65,55" stroke="#3E2723" stroke-width="1.5" fill="none" /> <!-- Smile -->
+  <path d="M60,80 L60,120" stroke="#ECEFF1" stroke-width="30" fill="none" /> <!-- Body -->
+  <path d="M60,80 L40,110" stroke="#ECEFF1" stroke-width="10" fill="none" /> <!-- Left arm -->
+  <path d="M60,80 L80,110" stroke="#ECEFF1" stroke-width="10" fill="none" /> <!-- Right arm -->
+  
+  <!-- Person 2 (right) -->
+  <ellipse cx="140" cy="50" rx="25" ry="30" fill="#F8BEAB" /> <!-- Head -->
+  <path d="M120,40 C115,20 130,15 140,15 C150,15 165,20 160,40 L160,60 C155,75 125,75 120,60 Z" fill="#4E342E" /> <!-- Hair -->
+  <circle cx="130" cy="45" r="3" fill="#3E2723" /> <!-- Left eye -->
+  <circle cx="150" cy="45" r="3" fill="#3E2723" /> <!-- Right eye -->
+  <path d="M135,55 C138,58 142,58 145,55" stroke="#3E2723" stroke-width="1.5" fill="none" /> <!-- Smile -->
+  <path d="M140,80 L140,120" stroke="#2196F3" stroke-width="30" fill="none" /> <!-- Body -->
+  <path d="M140,80 L120,110" stroke="#2196F3" stroke-width="10" fill="none" /> <!-- Left arm -->
+  <path d="M140,80 L160,110" stroke="#2196F3" stroke-width="10" fill="none" /> <!-- Right arm -->
+  
+  <!-- Speech bubbles -->
+  <path d="M90,30 C85,30 80,25 80,20 C80,15 85,10 90,10 L100,10 C105,10 110,15 110,20 C110,25 105,30 100,30 Z" fill="#E0E0E0" />
+  <path d="M110,40 C105,40 100,35 100,30 C100,25 105,20 110,20 L120,20 C125,20 130,25 130,30 C130,35 125,40 120,40 Z" fill="#E0E0E0" />
+</svg>

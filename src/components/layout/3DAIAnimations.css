@@ -1,0 +1,265 @@
+/* 3D AI Animations CSS */
+
+/* Main 3D AI Model Animation */
+.ai-models-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.ai-model-container {
+  width: 300px;
+  height: 300px;
+  transform-origin: bottom center;
+  animation: floatModel 6s ease-in-out infinite;
+}
+
+@keyframes floatModel {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+.ai-model {
+  width: 100%;
+  height: 100%;
+}
+
+.medical-data-container {
+  animation-delay: 1s;
+}
+
+.robot-assistant-container {
+  animation-delay: 2s;
+}
+
+.medical-data-model {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.robot-assistant-model {
+  animation: rotate 8s linear infinite;
+}
+
+/* Pulse Animation for Medical Data Model */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Rotate Animation for Robot Assistant Model */
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Hologram Animation */
+.hologram-brain {
+  animation: pulseBrain 3s ease-in-out infinite;
+}
+
+@keyframes pulseBrain {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.hologram-beam {
+  animation: beamFlicker 2s linear infinite;
+}
+
+@keyframes beamFlicker {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+  75% { opacity: 0.5; }
+}
+
+.brain-detail {
+  animation: glowPulse 4s ease-in-out infinite;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 20;
+}
+
+@keyframes glowPulse {
+  0% { stroke-dashoffset: 20; }
+  50% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -20; }
+}
+
+/* Processor Core Animation */
+.processor-core {
+  animation: rotateCore 8s linear infinite;
+}
+
+@keyframes rotateCore {
+  from { transform: rotate(0deg); transform-origin: center; }
+  to { transform: rotate(360deg); transform-origin: center; }
+}
+
+.processor-inner {
+  animation: pulseCore 4s ease-in-out infinite;
+}
+
+@keyframes pulseCore {
+  0%, 100% { transform: scale(1); transform-origin: center; }
+  50% { transform: scale(1.2); transform-origin: center; }
+}
+
+/* Data Particles Animation */
+.data-particle {
+  opacity: 0;
+}
+
+.particle1 {
+  animation: moveParticle 3s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.particle2 {
+  animation: moveParticle 3s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+.particle3 {
+  animation: moveParticle 3s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.particle4 {
+  animation: moveParticle 3s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+.particle5 {
+  animation: moveParticle 3s ease-in-out infinite;
+  animation-delay: 2.4s;
+}
+
+@keyframes moveParticle {
+  0% { opacity: 0; transform: translate(0, 0); }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translate(20px, -20px); }
+}
+
+/* Energy Rings Animation */
+.energy-ring {
+  opacity: 0.7;
+  transform-origin: center;
+}
+
+.ring1 {
+  animation: rotateRing 10s linear infinite;
+}
+
+.ring2 {
+  animation: rotateRing 15s linear infinite reverse;
+}
+
+.ring3 {
+  animation: rotateRing 20s linear infinite;
+}
+
+@keyframes rotateRing {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Connection Lines Animation */
+.connection-line {
+  animation: pulseLine 4s ease-in-out infinite;
+}
+
+@keyframes pulseLine {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}
+
+/* Panel Details Animation */
+.panel-detail {
+  animation: blinkDetail 3s ease-in-out infinite;
+}
+
+@keyframes blinkDetail {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Glow Effects Animation */
+.core-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.hologram-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+/* Connection Tubes Animation */
+.tube {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 20;
+  animation: flowTube 3s linear infinite;
+}
+
+@keyframes flowTube {
+  from { stroke-dashoffset: 20; }
+  to { stroke-dashoffset: -20; }
+}
+
+/* Base Platform Animation */
+.base-platform {
+  animation: pulsePlatform 5s ease-in-out infinite;
+}
+
+@keyframes pulsePlatform {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .ai-model-container {
+    right: 5%;
+    width: 200px;
+    height: 200px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-model-container {
+    right: 50%;
+    transform: translateX(50%);
+    width: 150px;
+    height: 150px;
+    bottom: 5px;
+  }
+  
+  @keyframes floatModel {
+    0%, 100% { transform: translateY(0) translateX(50%) rotate(0deg); }
+    50% { transform: translateY(-10px) translateX(50%) rotate(1deg); }
+  }
+}

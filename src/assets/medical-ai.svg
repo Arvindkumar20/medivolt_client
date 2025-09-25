@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Robot Head -->
+  <rect x="60" y="40" width="80" height="70" rx="10" fill="#3B82F6" class="robot-head" />
+  
+  <!-- Robot Face -->
+  <circle cx="80" cy="65" r="10" fill="#FFFFFF" class="robot-eye" />
+  <circle cx="120" cy="65" r="10" fill="#FFFFFF" class="robot-eye" />
+  <circle cx="80" cy="65" r="5" fill="#10B981" class="robot-pupil" />
+  <circle cx="120" cy="65" r="5" fill="#10B981" class="robot-pupil" />
+  
+  <!-- Robot Mouth -->
+  <rect x="75" y="85" width="50" height="10" rx="5" fill="#FFFFFF" class="robot-mouth" />
+  <line x1="80" y1="90" x2="120" y2="90" stroke="#10B981" stroke-width="2" stroke-dasharray="3 2" class="robot-speech" />
+  
+  <!-- Robot Antenna -->
+  <line x1="100" y1="40" x2="100" y2="25" stroke="#3B82F6" stroke-width="4" class="robot-antenna" />
+  <circle cx="100" cy="20" r="5" fill="#EC4899" class="robot-antenna-tip" />
+  
+  <!-- Medical Cross -->
+  <rect x="85" y="110" width="30" height="30" fill="#FFFFFF" class="medical-cross-bg" />
+  <rect x="95" y="110" width="10" height="30" fill="#EF4444" class="medical-cross-v" />
+  <rect x="85" y="120" width="30" height="10" fill="#EF4444" class="medical-cross-h" />
+  
+  <!-- Brain Waves -->
+  <path d="M30,50 Q40,40 50,50 Q60,60 70,50" stroke="#8B5CF6" stroke-width="2" fill="none" class="brain-wave" />
+  <path d="M130,50 Q140,40 150,50 Q160,60 170,50" stroke="#8B5CF6" stroke-width="2" fill="none" class="brain-wave" />
+  
+  <!-- Data Circles -->
+  <circle cx="40" cy="100" r="10" fill="#10B981" opacity="0.7" class="data-circle" />
+  <circle cx="160" cy="100" r="10" fill="#10B981" opacity="0.7" class="data-circle" />
+  <circle cx="40" cy="130" r="15" fill="#3B82F6" opacity="0.7" class="data-circle" />
+  <circle cx="160" cy="130" r="15" fill="#3B82F6" opacity="0.7" class="data-circle" />
+  
+  <!-- Pulse Lines -->
+  <path d="M40,160 L60,160 L70,140 L80,180 L90,160 L100,160" stroke="#EF4444" stroke-width="2" class="pulse-line" />
+  <path d="M100,160 L110,160 L120,140 L130,180 L140,160 L160,160" stroke="#EF4444" stroke-width="2" class="pulse-line" />
+</svg>
