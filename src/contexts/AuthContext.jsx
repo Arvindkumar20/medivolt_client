@@ -8,33 +8,33 @@ export function AuthProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  // ✅ On mount: check if user already logged in (cookie-based session)
   useEffect(() => {
-    // Check for stored token and validate
-    const token = localStorage.getItem('token');
-    if (token) {
-      authAPI.getProfile()
-        .then((userData) => {
+    (async () => {
+      try {
+        const userData = await authAPI.getProfile(); // backend `/auth/me` route
+        if (userData?.user) {
           setUser(userData.user);
           setIsAuthenticated(true);
-        })
-        .catch(() => {
-          localStorage.removeItem('token');
-        })
-        .finally(() => {
-          setLoading(false);
-        });
-    } else {
-      setLoading(false);
-    }
+        }
+      } catch (error) {
+        setUser(null);
+        setIsAuthenticated(false);
+      } finally {
+        setLoading(false);
+      }
+    })();
   }, []);
 
+  // ✅ Login
   const login = async (email, password) => {
     setLoading(true);
     try {
-      const response = await authAPI.login(email, password);
-      localStorage.setItem('token', response.token);
-      setUser(response.user);
-      setIsAuthenticated(true);
+      const response = await authAPI.login(email, password); // cookie set hogi backend se
+      if (response?.user) {
+        setUser(response.user);
+        setIsAuthenticated(true);
+      }
     } catch (error) {
       throw error;
     } finally {
@@ -42,24 +42,30 @@ export function AuthProvider({ children }) {
     }
   };
 
-  const register = async (email, password, name) => {
+  // ✅ Register
+  const register = async (email, password, name,role) => {
     setLoading(true);
+    // console.log(email, password, name,role)
     try {
-      const response = await authAPI.register(email, password, name);
-      localStorage.setItem('token', response.token);
-      setUser(response.user);
-      setIsAuthenticated(true);
+      const response = await authAPI.register(email, password, name,role); // cookie set hogi backend se
+      // console.log(response);
+      if (response?.user) {
+        setUser(response.user);
+        setIsAuthenticated(true);
+      }
     } catch (error) {
+      console.log(error)
       throw error;
     } finally {
       setLoading(false);
     }
   };
 
+  // ✅ Logout
   const logout = async () => {
     setLoading(true);
     try {
-      localStorage.removeItem('token');
+      await authAPI.logout(); // backend se cookie clear
       setUser(null);
       setIsAuthenticated(false);
     } finally {
@@ -68,7 +74,9 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, isAuthenticated, loading, login, register, logout }}>
+    <AuthContext.Provider
+      value={{ user, isAuthenticated, loading, login, register, logout }}
+    >
       {children}
     </AuthContext.Provider>
   );
